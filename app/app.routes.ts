@@ -1,8 +1,9 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchComponent } from './components/search/search.component';
+
 
 const routes: RouterConfig = [
- { path: '', component: NavbarComponent }
+ { path: '', component: SearchComponent }
 ];
 
 export const appRouterProviders = [
