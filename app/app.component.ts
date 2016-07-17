@@ -8,6 +8,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
+    styleUrls: ['app.component.css'],
     directives: [ROUTER_DIRECTIVES, NavbarComponent, SearchComponent]
 })
 
