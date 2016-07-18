@@ -5,6 +5,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   moduleId: module.id,
   selector: 'search',
   templateUrl: 'search.component.html',
+  styleUrls: ['search.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 
