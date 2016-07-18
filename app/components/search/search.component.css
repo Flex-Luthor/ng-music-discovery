@@ -17,7 +17,7 @@ form {
 
 #header-text {
   font-size: 6em;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   color: #FFFFFF;
   opacity: 0.5;
@@ -25,7 +25,7 @@ form {
 
 #form-container {
   background-color: white;
-  width: 40%;
+  width: 400px;
   opacity: 0.7;
   margin: 0 auto;
   border-radius: 2em;

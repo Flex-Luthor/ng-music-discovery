@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+
+import { SpotifyService } from '../../services/spotify.service';
+
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
