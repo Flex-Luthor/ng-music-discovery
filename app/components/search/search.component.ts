@@ -20,29 +20,12 @@ export class SearchComponent {
   }
 
   searchArtist() {
-    this._spotifyService.searchArtist(this.artistString)
-      .subscribe(res => {
-        console.log('res artist: ', res);
-      })
+    if(this.artistString) {
+      this._spotifyService.searchArtist(this.artistString)
+        .subscribe(res => {
+          console.log('res artist: ', res);
+          this.artistResults = res.artists.items;
+        })
+    }
   }
 }
-
-
-
-
-
-// export class SearchComponent { 
-
-//   artistString: string;
-//   artistResults: Artist[];
-
-//   constructor(private _spotifyService: SpotifyService, private _router: Router) {}
-
-//   searchArtist() {
-//     this._spotifyService.searchArtist(this.artistString)
-//       .subscribe(res => {
-//         console.log('artist results: ', res);
-//       })
-//   }
-
-// }
