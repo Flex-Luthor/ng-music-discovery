@@ -8,10 +8,16 @@
 
   <div id="form-container">
     <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="search-input" placeholder="Search by Arist" (keyup)="searchArtist()" [(ngModel)]="artistString">
+      <div id="inner-form-container" class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="search-input" placeholder="Search by Artist" autofocus (keyup)="searchArtist()" [(ngModel)]="artistString">
       </div>
     </form>
+  </div>
+
+  <div *ngIf="artistResults && artistString">
+    <div *ngFor="let artist of artistResults">
+      <div class="artist-results">{{artist.name}}</div>
+    </div>
   </div>
 
 </div>
