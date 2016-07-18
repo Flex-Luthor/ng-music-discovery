@@ -9,4 +9,12 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES]
 })
 
-export class SearchComponent { }
+export class SearchComponent { 
+
+  artistString: string;
+
+  searchArtist() {
+    console.log('hello');
+  }
+
+}

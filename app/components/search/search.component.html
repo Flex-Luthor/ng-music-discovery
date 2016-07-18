@@ -9,7 +9,7 @@
   <div id="form-container">
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="search-input" placeholder="Search by Arist">
+        <input class="mdl-textfield__input" type="text" id="search-input" placeholder="Search by Arist" (keyup)="searchArtist()" [(ngModel)]="artistString">
       </div>
     </form>
   </div>
