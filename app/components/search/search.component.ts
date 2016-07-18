@@ -23,7 +23,7 @@ export class SearchComponent {
     if(this.artistString) {
       this._spotifyService.searchArtist(this.artistString)
         .subscribe(res => {
-          console.log('res artist: ', res);
+          console.log('res artist: ', res.artists.items);
           this.artistResults = res.artists.items;
         })
     }
