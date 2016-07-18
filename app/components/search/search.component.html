@@ -16,7 +16,7 @@
 
   <div class="my-animation" *ngIf="artistResults && artistString">
     <div *ngFor="let artist of artistResults">
-      <div class="artist-results">{{artist.name}}</div>
+      <div class="artist-results" (click)="goToArtist(artist)">{{artist.name}}</div>
     </div>
   </div>
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 import { SpotifyService } from './services/spotify.service';
 import { HTTP_PROVIDERS } from '@angular/http';
@@ -14,7 +15,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     templateUrl: 'app.component.html',
     styleUrls: ['app.component.css'],
     providers: [SpotifyService, HTTP_PROVIDERS],
-    directives: [ROUTER_DIRECTIVES, NavbarComponent, SearchComponent]
+    directives: [ROUTER_DIRECTIVES, NavbarComponent, SearchComponent, ArtistComponent]
 })
 
 export class AppComponent { }

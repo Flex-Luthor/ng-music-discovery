@@ -28,4 +28,8 @@ export class SearchComponent {
         })
     }
   }
+
+  goToArtist(artist: Artist[]) {
+    console.log('artist: ', artist);
+  }
 }

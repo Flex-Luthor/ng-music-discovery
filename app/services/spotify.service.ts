@@ -13,7 +13,7 @@ export class SpotifyService {
   }
 
   searchArtist(sArtist:string) {
-    this.searchUrl = 'https://api.spotify.com/v1/search?query=' + sArtist + '&limit=6&type=artist';
+    this.searchUrl = 'https://api.spotify.com/v1/search?query=' + sArtist + '&limit=8&type=artist';
     return this._http.get(this.searchUrl)
       .map(res => res.json());
   }
