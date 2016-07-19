@@ -30,6 +30,6 @@ export class SearchComponent {
   }
 
   goToArtist(artist: Artist[]) {
-    console.log('artist: ', artist);
+    this._router.navigate(['/artist', artist.id])
   }
 }
