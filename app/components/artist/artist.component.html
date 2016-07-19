@@ -1,1 +1,8 @@
-ARTIST COMPONENT
+<section *ngIf="artist">
+  <div class="artist-header">
+    <div class="mdl-layout-spacer"></div>
+      <img *ngIf="artist.images.length" src="{{artist.images[0].url}}" class="img-round">
+      <p id="artist-text">{{artist.name}}</p>
+    <div class="mdl-layout-spacer"></div>
+  </div>
+</section>
