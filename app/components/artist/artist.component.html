@@ -9,12 +9,12 @@
 
 <section *ngIf="topTracks">
   <div class="top-tracks">
-    <audio controls src="{{topTracks[0].preview_url}}"></audio>
+    <audio controls src="{{topTracks[0].preview_url}}" preload="auto"></audio>
   </div>
   <div class="top-tracks">
-    <audio controls src="{{topTracks[1].preview_url}}"></audio>
+    <audio controls src="{{topTracks[1].preview_url}}" preload="auto"></audio>
   </div>
   <div class="top-tracks">
-    <audio controls src="{{topTracks[2].preview_url}}"></audio>
+    <audio controls src="{{topTracks[2].preview_url}}" preload="auto"></audio>
   </div>
 </section>
