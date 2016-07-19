@@ -22,14 +22,14 @@
 <section *ngIf="relatedArtists">
   <div class="related-artists-container">
     <p>Related Artists</p>
-  </div>
-  <div class="related-artist-name">
-    <p>{{relatedArtists[0].name}}</p>
-  </div>
-  <div class="related-artist-name">
-    <p>{{relatedArtists[1].name}}</p>
-  </div>
-  <div class="related-artist-name">
-    <p>{{relatedArtists[2].name}}</p>
+      <div class="related-artist-name">
+        <p (click)="goToArtist(relatedArtists[0].id)">{{relatedArtists[0].name}}</p>
+      </div>
+      <div class="related-artist-name">
+        <p (click)="goToArtist(relatedArtists[1].id)">{{relatedArtists[1].name}}</p>
+      </div>
+      <div class="related-artist-name">
+        <p (click)="goToArtist(relatedArtists[2].id)">{{relatedArtists[2].name}}</p>
+      </div>
   </div>
 </section>

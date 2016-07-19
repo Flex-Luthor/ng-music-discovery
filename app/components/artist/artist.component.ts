@@ -45,7 +45,10 @@ export class ArtistComponent {
         this.relatedArtists = relatedArtists.artists;
         console.log('relatedArtists: ', this.relatedArtists);
       })
+  }
 
+  goToArtist(id:string) {
+    console.log('id: ', id);
   }
 
 }

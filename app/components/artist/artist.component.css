@@ -41,9 +41,14 @@ audio {
   font-weight: 600;
 }
 
-.related-artist-name {
+.related-artist-name p{
   color: #FFFFFF;
   font-size: 1.25em;
-  opacity: 0.5;
-  font-weight: 600;
+  opacity: 0.4;
+  font-weight: 700;
+}
+
+.related-artist-name p:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
