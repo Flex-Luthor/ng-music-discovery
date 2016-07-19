@@ -33,10 +33,17 @@ audio {
   padding-top: 2em;
 }
 
-.similar-artists-container p {
+.related-artists-container p {
   color: #FFFFFF;
   text-align: center;
   font-size: 1.5em;
   opacity: 0.7;
+  font-weight: 600;
+}
+
+.related-artist-name {
+  color: #FFFFFF;
+  font-size: 1.25em;
+  opacity: 0.5;
   font-weight: 600;
 }
