@@ -15,7 +15,7 @@ export class ArtistComponent {
   id: string;
   newId: string;
   artist: Artist[];
-  albums: Album[];
+  topTracks: Album[];
 
   constructor(private _spotifyService: SpotifyService, private _router: Router, private _route: ActivatedRoute) {
 
@@ -35,10 +35,9 @@ export class ArtistComponent {
 
     this._spotifyService.getTopTracks(this.newId)
       .subscribe(topTracks => {
-        console.log('topTracks: ', topTracks);
-        // this.topTracks = topTracks.items;
+        console.log('topTracks: ', topTracks.tracks);
+        this.topTracks = topTracks.tracks;
       })
-
 
   }
 
