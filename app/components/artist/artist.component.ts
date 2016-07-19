@@ -33,11 +33,12 @@ export class ArtistComponent {
         this.artist = artist;
       })
 
-    this._spotifyService.getAlbums(this.newId)
-      .subscribe(albums => {
-        console.log('albums: ', albums);
-        this.albums = albums.items;
+    this._spotifyService.getTopTracks(this.newId)
+      .subscribe(topTracks => {
+        console.log('topTracks: ', topTracks);
+        // this.topTracks = topTracks.items;
       })
+
 
   }
 
