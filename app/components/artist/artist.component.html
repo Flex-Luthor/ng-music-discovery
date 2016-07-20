@@ -22,14 +22,12 @@
 <section *ngIf="relatedArtists">
   <div class="related-artists-container">
     <p>Related Artists</p>
-      <div class="related-artist-name">
-        <p (click)="goToArtist(relatedArtists[0].id)">{{relatedArtists[0].name}}</p>
-      </div>
-      <div class="related-artist-name">
-        <p (click)="goToArtist(relatedArtists[1].id)">{{relatedArtists[1].name}}</p>
-      </div>
-      <div class="related-artist-name">
-        <p (click)="goToArtist(relatedArtists[2].id)">{{relatedArtists[2].name}}</p>
-      </div>
+    <div *ngFor="let artist of relatedArtists" class="content-grid mdl-grid">    
+      <div class="mdl-layout-spacer"></div>
+        <div (click)="goToArtist(artist.id)" class="related-artist">
+          <img *ngIf="artist.images[0].url" src="{{artist.images[0].url}}" alt="">
+        </div>
+      <div class="mdl-layout-spacer"></div>
+    </div>
   </div>
 </section>

@@ -16,7 +16,7 @@ export class ArtistComponent {
   newId: string;
   artist: Artist[];
   topTracks: any;
-  relatedArtists: any;
+  relatedArtists: Artist[];
 
   constructor(private _spotifyService: SpotifyService, private _router: Router, private _route: ActivatedRoute) {
 
@@ -42,13 +42,14 @@ export class ArtistComponent {
 
     this._spotifyService.getRelatedArtists(this.newId)
       .subscribe(relatedArtists => {
-        this.relatedArtists = relatedArtists.artists;
+        this.relatedArtists = relatedArtists.artists.slice(0,3);
         console.log('relatedArtists: ', this.relatedArtists);
       })
   }
 
-  goToArtist(id:string) {
-    console.log('id: ', id);
+  goToArtist(id:any) {
+    console.log('params: ', this._router);
+    this._router.navigate(['/artist', id]);
   }
 
 }

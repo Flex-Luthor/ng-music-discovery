@@ -8,5 +8,5 @@ const routes: RouterConfig = [
 ];
 
 export const appRouterProviders = [
-  provideRouter(routes);
+  provideRouter(routes)
 ];
